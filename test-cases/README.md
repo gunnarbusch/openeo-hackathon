@@ -3,10 +3,10 @@ To get a first insight in the setup and use of openEO, we start with some test c
 
 We are using two back-ends to perform these tasks:
 
-* [openEO GeoPyspark driver](https://github.com/Open-EO/openeo-geopyspark-driver)
+* [openEO GeoPyspark back-end](https://github.com/Open-EO/openeo-geopyspark-driver)
   URL: TBC
   Credentials: none
-* [openEO Google Earth Engine driver](https://github.com/Open-EO/openeo-earthengine-driver)
+* [openEO Google Earth Engine back-end](https://github.com/Open-EO/openeo-earthengine-driver)
   URL: TBC
   Credentials: TBC
 
@@ -29,6 +29,8 @@ You want to download the results as PNG (with additional color stretching) or Ge
 
 ## Task 4
 
+*In this task you'll use the Python client and the openEO GeoPyspark back-end only.*
+
 First of all, you want to find out which Sentinel-2 data is available at the back-end, as well as if the back-end provides User-Defined-Functions (UDFs). You want to run the provided Python script on each time series of the dataset. The extents are defined by: 
 
 * bounding box (left: 16.138916, top: 48.320647, right: 16.524124, bottom: 48.138600, EPSG:4326)
@@ -48,8 +50,8 @@ You want to perform a batch processing and afterwards download the results as JS
 
 ## Solutions
 
-* [Task 1](task-1/solutions.md)
-* [Task 2](task-2/solutions.md)
-* [Task 3](task-3/solutions.md)
-* [Task 4](task-4/solutions.md)
-* [Task 5](task-5/solutions.md)
+* [Task 1](task-1/solution.md)
+* [Task 2](task-2/solution.md)
+* [Task 3](task-3/solution.md)
+* [Task 4](task-4/solution.md)
+* [Task 5](task-5/solution.md)
