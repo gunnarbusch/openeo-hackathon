@@ -4,11 +4,11 @@ To get a first insight in the setup and use of openEO, we start with some test c
 We are using two back-ends to perform these tasks:
 
 * [openEO GeoPyspark back-end](https://github.com/Open-EO/openeo-geopyspark-driver)
-  URL: TBC
-  Credentials: none
+  * URL: http://openeo.vgt.vito.be/openeo
+  * Credentials: none
 * [openEO Google Earth Engine back-end](https://github.com/Open-EO/openeo-earthengine-driver)
-  URL: TBC
-  Credentials: TBC
+  * URL: http://giv-project8.uni-muenster.de
+  * Credentials: Username is `groupX`  with X being the group number and password `test123`
 
 ## Task 1
 
@@ -40,7 +40,7 @@ You want to download the results as GeoTiff.
 
 ## Task 5
 
-You want to compute time series of zonal statistics (arithmetic mean / average) of Sentinel-2 data using a predefined polygon. First of all you should check if zonal-statistics is provided by the back-end. Furthermore you need to upload [the prepared polygon](test-case-5/polygon.json). Use the following extents and band: 
+You want to compute time series of zonal statistics (arithmetic mean / average) of Sentinel-2 data using a predefined polygon. First of all you should check if zonal-statistics is provided by the back-end. Furthermore you need to upload [the prepared polygon](task-5/polygon.json). Use the following extents and band: 
 
 * bounding box (left: 16.138916, top: 48.320647, right: 16.524124, bottom: 48.138600, EPSG:4326)
 * temporal extent (01.01.2018 – 15.01.2018)

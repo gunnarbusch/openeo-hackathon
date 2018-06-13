@@ -29,3 +29,7 @@ The Hackathon is an 1,5-day event. At the afternoon of the second day, a *User R
 | *14:30 - 15:45* | *Feedback from the Hackathon* |
 | *15:45 - 16:00* | *Raffle and Closing Note*     |
 
+## Contributing
+
+Feel free to fork and clone this repository. You can add your results for the test cases and the hacking session into the respective folders and contribute to this repository by sending pull requests. Thanks!
+

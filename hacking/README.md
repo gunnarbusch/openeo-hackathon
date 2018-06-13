@@ -1,6 +1,6 @@
 # Hacking
 
-Please feel free to add folders here for your hacking projects.
+Please feel free to add folders here for your hacking projects and add them via pull request.
 
 ## Ideas
 
