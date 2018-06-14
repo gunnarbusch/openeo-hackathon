@@ -3,16 +3,21 @@ To get a first insight in the setup and use of openEO, we start with some test c
 
 We are using two back-ends to perform these tasks:
 
+* [openEO Google Earth Engine back-end](https://github.com/Open-EO/openeo-earthengine-driver)
+  - URL: http://giv-project8.uni-muenster.de
+  - Credentials: Username is `groupX`  with X being the group number and password `test123`
 * [openEO GeoPyspark back-end](https://github.com/Open-EO/openeo-geopyspark-driver)
   * URL: http://openeo.vgt.vito.be/openeo
   * Credentials: none
-* [openEO Google Earth Engine back-end](https://github.com/Open-EO/openeo-earthengine-driver)
-  * URL: http://giv-project8.uni-muenster.de
-  * Credentials: Username is `groupX`  with X being the group number and password `test123`
 
 ## Task 1
 
-Please install one of the openEO clients. Make sure that the client is properly working by connecting to one the back-ends and requesting the capabilities that are provided by the back-end.
+Please install one of the openEO clients:
+
+* [Python client](https://github.com/Open-EO/openeo-python-client )
+* [R client](https://github.com/Open-EO/openeo-r-client )
+
+Make sure that the client is properly working by connecting to one of the back-ends and requesting the capabilities that are provided by the back-end.
 
 ## Task 2
 
@@ -29,17 +34,6 @@ You want to download the results as PNG (with additional color stretching) or Ge
 
 ## Task 4
 
-*In this task you'll use the Python client and the openEO GeoPyspark back-end only.*
-
-First of all, you want to find out which Sentinel-2 data is available at the back-end, as well as if the back-end provides User-Defined-Functions (UDFs). You want to run the provided Python script on each time series of the dataset. The extents are defined by: 
-
-* bounding box (left: 16.138916, top: 48.320647, right: 16.524124, bottom: 48.138600, EPSG:4326)
-* temporal extent (01.01.2018 – 31.01.2018)
-
-You want to download the results as GeoTiff.
-
-## Task 5
-
 You want to compute time series of zonal statistics (arithmetic mean / average) of Sentinel-2 data using a predefined polygon. First of all you should check if zonal-statistics is provided by the back-end. Furthermore you need to upload [the prepared polygon](task-5/polygon.json). Use the following extents and band: 
 
 * bounding box (left: 16.138916, top: 48.320647, right: 16.524124, bottom: 48.138600, EPSG:4326)
@@ -47,6 +41,17 @@ You want to compute time series of zonal statistics (arithmetic mean / average) 
 * band 8
 
 You want to perform a batch processing and afterwards download the results as JSON.
+
+## Task 5
+
+*This task is currently only supported by the Python client and the openEO GeoPyspark back-end. If you are not familiar with Python feel free to skip this task.*
+
+First of all, you want to find out which Sentinel-2 data is available at the back-end, as well as if the back-end provides User-Defined-Functions (UDFs). You want to run the provided Python script on each time series of the dataset. The extents are defined by: 
+
+- bounding box (left: 16.138916, top: 48.320647, right: 16.524124, bottom: 48.138600, EPSG:4326)
+- temporal extent (01.01.2018 – 31.01.2018)
+
+You want to download the results as GeoTiff.
 
 ## Solutions
 
