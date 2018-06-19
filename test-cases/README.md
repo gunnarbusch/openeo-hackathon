@@ -3,7 +3,7 @@ To get a first insight in the setup and use of openEO, we start with some test c
 
 We are using two back-ends to perform these tasks:
 
-* [openEO Google Earth Engine back-end](https://github.com/Open-EO/openeo-earthengine-driver)
+* [openEO Earth Engine back-end](https://github.com/Open-EO/openeo-earthengine-driver)
   - URL: http://giv-project8.uni-muenster.de
   - Credentials: Username is `groupX`  with X being the group number and password `test123`
 * [openEO GeoPyspark back-end](https://github.com/Open-EO/openeo-geopyspark-driver)
@@ -14,14 +14,14 @@ We are using two back-ends to perform these tasks:
 
 Please install one of the openEO clients:
 
-* [Python client](https://github.com/Open-EO/openeo-python-client )
-* [R client](https://github.com/Open-EO/openeo-r-client )
+* [Python client](https://github.com/Open-EO/openeo-python-client)
+* [R client](https://github.com/Open-EO/openeo-r-client)
 
 Make sure that the client is properly working by connecting to one of the back-ends and requesting the capabilities that are provided by the back-end.
 
 ## Task 2
 
-You want to know which products and processes are offered by the back-end. Please find this information. Furthermore, you want to know which temporal extent is available for a specific product (e.g. Sentinel-2) and which arguments need to be provided for the `ndvi ` process.
+You want to know which products and processes are offered by the back-end. Please find this information. Furthermore, you want to know which temporal extent is available for a specific product (e.g. Sentinel-2) and which arguments need to be provided for the `ndvi` process.
 
 ## Task 3
 
@@ -34,7 +34,7 @@ You want to download the results as PNG (with additional color stretching) or Ge
 
 ## Task 4
 
-You want to compute time series of zonal statistics (arithmetic mean / average) of Sentinel-2 data using a predefined polygon. First of all you should check if zonal-statistics is provided by the back-end. Furthermore you need to upload [the prepared polygon](task-4/polygon.json). Use the following extents and band: 
+You want to compute time series of zonal statistics (arithmetic mean / average) of Sentinel-2 data using a predefined polygon. First of all you should check if the process `zonal_statistics` is provided by the back-end. Furthermore you need to upload [the prepared polygon](task-4/polygon.json). Use the following extents and band: 
 
 * bounding box (left: 16.138916, top: 48.320647, right: 16.524124, bottom: 48.138600, EPSG:4326)
 * temporal extent (01.01.2018 – 31.01.2018)
@@ -55,8 +55,7 @@ You want to download the results as GeoTiff.
 
 ## Solutions
 
-* [Task 1](task-1/solution.md)
-* [Task 2](task-2/solution.md)
-* [Task 3](task-3/solution.md)
-* [Task 4](task-4/solution.md)
-* [Task 5](task-5/solution.md)
+* [R client / GEE back-end](solution-r-gee.md)
+* [R client / GeoPyspark back-end](solution-r-geopyspark.md)
+* [Python client / GEE back-end](solution-python-gee.md)
+* [Python client / GGeoPysparkEE back-end](solution-python-geopyspark.md)
