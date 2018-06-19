@@ -1,0 +1,47 @@
+# openEO Hackathon - Solution R client / GeoPyspark back-end
+
+## Task 1
+
+Installing and loading the required packages:
+```{r}
+install.packages("devtools")
+require("devtools")
+
+# Sometimes the devtools fail to install some dependencies.
+# You may need to install Rcpp and rlang manually by uncommenting thw following two lines:
+# install.packages("Rcpp")
+# install.packages("rlang")
+
+install_github(repo="Open-EO/openeo-r-client",ref="develop",dependencies=TRUE)
+require("openeo")
+```
+
+Connecting to the openEO Earth Engine back-end. You may need to change the credentials:
+```{r}
+gps.url = "http://giv-project8.uni-muenster.de"
+gps.pwd = "test123"
+gps.user = "groupX"
+con = connect(gps.url,user=gps.user,password=gps.pwd)
+```
+
+Requesting the capabilities that are provided by the back-end:
+```{r}
+con %>% listCapabilities()
+```
+
+## Task 2
+
+Requesting the processes offered by the back-end:
+```{r}
+con %>% listProcesses()
+```
+
+Requesting the arguments required for the ndvi process:
+```{r}
+con %>% describeProcess("NDVI")
+```
+
+Requesting the products offered by the back-end:
+```{r}
+con %>% listCollections()
+```
